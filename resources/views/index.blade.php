@@ -44,6 +44,7 @@
         </ul>
     @else
         <p>No events available.</p>
+        <p>John Reyel Vargas</p>
     @endif
 
     

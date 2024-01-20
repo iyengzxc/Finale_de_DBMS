@@ -41,5 +41,6 @@
     </ul>
     @else
         <p>No participants available.</p>
+        <p>John reyel Vargas</p>
     @endif
 @endsection
