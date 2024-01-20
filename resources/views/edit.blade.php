@@ -1,11 +1,9 @@
-
-
 @extends('layouts.app')
 
 @section('title', 'Edit Participant')
 
 @section('content')
-
+<div class="container mt-4">
     <hr>
     <h1>Edit Participant</h1>
 
@@ -13,19 +11,27 @@
         @csrf
         @method('PUT')
 
-        <label for="participant_name">Participant Name:</label>
-        <input type="text" name="participant_name" value="{{ $participant->participant_name }}" required>
+        <div class="mb-3">
+            <label for="participant_name" class="form-label">Participant Name:</label>
+            <input type="text" name="participant_name" value="{{ $participant->participant_name }}" class="form-control" required>
+        </div>
 
-        <label for="email">Email:</label>
-        <input type="email" name="email" value="{{ $participant->email }}" required>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" name="email" value="{{ $participant->email }}" class="form-control" required>
+        </div>
 
-        <label for="phone">Phone:</label>
-        <input type="text" name="phone" value="{{ $participant->phone }}" required>
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone:</label>
+            <input type="text" name="phone" value="{{ $participant->phone }}" class="form-control" required>
+        </div>
 
-        <button type="submit">Update Participant</button>
+        <button type="submit" class="btn btn-primary">Update Participant</button>
     </form>
 
     <br>
 
-    <a href="{{ route('participants.show', ['id' => $participant->id]) }}">Back to Participant</a>
+    <a href="{{ route('participants.show', ['id' => $participant->id]) }}" class="btn btn-secondary">Back to Participant</a>
+</div>
 @endsection
+
