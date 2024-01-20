@@ -6,13 +6,13 @@
 <div class="container mt-4">
     <hr>
 
-    <h1>Participants</h1>
+    <h1 class="text-warning">Participants</h1>
 
     <form method="POST" action="{{ route('participants.store') }}">
         @csrf
-        <div class="mb-3">
-            <label for="participant_name" class="form-label">Participant Name:</label>
-            <input type="text" name="participant_name" class="form-control" required>
+        <div class="mb-3 ">
+            <label for="participant_name" class="form-label ">Participant Name:</label>
+            <input type="text" name="participant_name" class="form-control " required>
         </div>
 
         <div class="mb-3">
@@ -28,14 +28,17 @@
         <button type="submit" class="btn btn-primary">Add Participant</button>
     </form>
 
+    <br>
+    <br>
+
     @if(isset($participants) && count($participants) > 0)
         <table class="table mt-4">
             <thead>
                 <tr>
-                    <th>Participant Name</th>
-                    <th>Email</th>
-                    <th>Phone</th>
-                    <th>Action</th>
+                    <th class="text-warning h4 ">Participant Name</th>
+                    <th class="text-warning h4 ">Email</th>
+                    <th class="text-warning h4 ">Phone</th>
+                    <th class="text-warning h4 ">Action</th>
                 </tr>
             </thead>
             <tbody>

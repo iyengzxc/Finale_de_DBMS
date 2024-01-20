@@ -7,7 +7,7 @@
 <div class="container mt-4">
     <hr>
 
-    <h1>Events</h1>
+    <h1 class="text-primary">Events</h1>
 
     <form method="POST" action="{{ route('events.store') }}">
         @csrf
@@ -31,18 +31,18 @@
             <input type="text" name="location" class="form-control" required>
         </div>
 
-        <button type="submit" class="btn btn-primary">Add Event</button>
+        <button type="submit" class="btn btn-warning">Add Event</button>
     </form>
 
     @if(isset($events) && count($events) > 0)
         <table class="table mt-4">
             <thead>
                 <tr>
-                    <th>Event Name</th>
-                    <th>Description</th>
-                    <th>Date</th>
-                    <th>Location</th>
-                    <th>Action</th>
+                    <th class="text-primary h4 ">Event Name</th>
+                    <th class="text-primary h4 ">Description</th>
+                    <th class="text-primary h4 ">Date</th>
+                    <th class="text-primary h4 ">Location</th>
+                    <th class="text-primary h4 ">Action</th>
                 </tr>
             </thead>
             <tbody>

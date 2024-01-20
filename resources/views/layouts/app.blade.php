@@ -10,7 +10,7 @@
 <body>
     <div class="container-fluid bg-dark text-white py-5">
         <div class="container">
-            <h1 class="display-4">Welcome</h1>
+            <h1 class="display-4 text-danger">Welcome</h1>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand" href="{{ route('index') }}">WAG KOPYAHIN</a>
@@ -19,11 +19,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item h4">
-                    <a class="nav-link" href="{{ route('index') }}">Events</a>
+                <li class="nav-item h4 ">
+                    <a class="nav-link text-primary" href="{{ route('index') }}">Events</a>
                 </li>
                 <li class="nav-item h4">
-                    <a class="nav-link" href="{{ route('show') }}">Participants</a>
+                    <a class="nav-link text-warning" href="{{ route('show') }}">Participants</a>
                 </li>
             </ul>
         </div>

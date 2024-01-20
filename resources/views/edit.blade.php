@@ -5,7 +5,7 @@
 @section('content')
 <div class="container mt-4">
     <hr>
-    <h1>Edit Participant</h1>
+    <h1 class="text-success ">Edit Participant</h1>
 
     <form method="POST" action="{{ route('participants.update', $participant->id) }}">
         @csrf
@@ -26,7 +26,7 @@
             <input type="text" name="phone" value="{{ $participant->phone }}" class="form-control" required>
         </div>
 
-        <button type="submit" class="btn btn-primary">Update Participant</button>
+        <button type="submit" class="btn btn-success">Update Participant</button>
     </form>
 
     <br>
