@@ -5,6 +5,8 @@
 @section('title', 'Edit Participant')
 
 @section('content')
+
+    <hr>
     <h1>Edit Participant</h1>
 
     <form method="POST" action="{{ route('participants.update', $participant->id) }}">
