@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/event', [EventController::class, 'index'])->name('index');
+Route::get('/', [EventController::class, 'index'])->name('index');
 Route::get('/participant', [ParticipantController::class, 'show'])->name('show');
 
 Route::prefix('events')->group(function () {
