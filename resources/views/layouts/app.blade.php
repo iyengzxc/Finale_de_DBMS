@@ -23,7 +23,7 @@
                     <a class="nav-link text-primary" href="{{ route('index') }}">Events</a>
                 </li>
                 <li class="nav-item h4">
-                    <a class="nav-link text-warning" href="{{ route('show') }}">Participants</a>
+                    <a class="nav-link text-warning" href="{{ route('show') }}">Attendees</a>
                 </li>
             </ul>
         </div>

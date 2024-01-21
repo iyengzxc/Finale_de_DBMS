@@ -6,12 +6,12 @@
 <div class="container mt-4">
     <hr>
 
-    <h1 class="text-warning">Participants</h1>
+    <h1 class="text-warning">Attendees</h1>
 
     <form method="POST" action="{{ route('participants.store') }}">
         @csrf
         <div class="mb-3 ">
-            <label for="participant_name" class="form-label ">Participant Name:</label>
+            <label for="participant_name" class="form-label ">Attendess Name:</label>
             <input type="text" name="participant_name" class="form-control " required>
         </div>
 
@@ -25,7 +25,7 @@
             <input type="text" name="phone" class="form-control" required>
         </div>
 
-        <button type="submit" class="btn btn-primary">Add Participant</button>
+        <button type="submit" class="btn btn-primary">Add Attendess</button>
     </form>
 
     <br>
@@ -35,7 +35,7 @@
         <table class="table mt-4">
             <thead>
                 <tr>
-                    <th class="text-warning h4 ">Participant Name</th>
+                    <th class="text-warning h4 ">Attendees Name</th>
                     <th class="text-warning h4 ">Email</th>
                     <th class="text-warning h4 ">Phone</th>
                     <th class="text-warning h4 ">Action</th>
